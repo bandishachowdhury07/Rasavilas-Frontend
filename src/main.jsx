@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Rasavilas-Frontend/">
       <div className="container bg-secondary max-w-full ">
         <div className="max-w-7xl mx-auto">
           <App />
