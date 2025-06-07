@@ -14,7 +14,7 @@ export default {
           accent: "#4D3D3D",
           bgbutton: "Tangerine",
           heading: "#4D3D3D",
-          backgroud: "#FF7A00",
+          background: "#FF7A00",
           "base-100": "#ffffff",
         },
       },
