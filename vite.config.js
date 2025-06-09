@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/Rasavilas-Frontend/',
+  base: "/Rasavilas-Frontend",
   build: {
     outDir: 'dist'
   },
