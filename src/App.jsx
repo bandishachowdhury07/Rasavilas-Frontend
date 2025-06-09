@@ -13,7 +13,7 @@ import Login from "./pages/Login/Login";
 import Footer from "./Shared/Footer/Footer";
 import Recipe from "./pages/Dashboard/Recipe/Recipe";
 
-function App() {
+function App() { 
   return (
     <div className=" ">
       <Navbar></Navbar>
