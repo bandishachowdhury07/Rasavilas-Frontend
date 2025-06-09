@@ -7,5 +7,14 @@ export default defineConfig({
   base: '/Rasavilas-Frontend/',
   build: {
     outDir: 'dist'
-  }
+  },
+  server: {
+    proxy: {
+      '/predict': {
+        target: 'https://rasavilas-services.onrender.com',
+        changeOrigin: true,
+        secure: false,
+      },
+    },
+  },
 })
