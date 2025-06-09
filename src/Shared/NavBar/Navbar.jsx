@@ -86,7 +86,7 @@ const Navbar = () => {
         <div className="">
           <ul className="flex gap-4">
             <li>
-              <Link to="login">Login</Link>
+              <Link to="login">Login </Link>
             </li>
             <li>
               <Link to="dashboard">Dashboard</Link>
