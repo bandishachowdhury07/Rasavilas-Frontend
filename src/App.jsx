@@ -11,6 +11,7 @@ import Gethelp from "./pages/Dashboard/Gethelp";
 import Setting from "./pages/Dashboard/Setting";
 import Login from "./pages/Login/Login";
 import Footer from "./Shared/Footer/Footer";
+import Recipe from "./pages/Dashboard/Recipe/Recipe";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             element={<Setting></Setting>}
           ></Route>
         </Route>
+        <Route path="/recipe" element={<Recipe />} />
       </Routes>
       <Footer></Footer>
     </div>

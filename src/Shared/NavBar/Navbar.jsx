@@ -14,6 +14,9 @@ const Navbar = () => {
       <li>
         <Link to="/contact">Contact Us</Link>
       </li>
+      <li>
+        <Link to="/recipe">Recipe</Link>
+      </li>
     </>
   );
   return (
@@ -86,7 +89,7 @@ const Navbar = () => {
         <div className="">
           <ul className="flex gap-4">
             <li>
-              <Link to="login">Login</Link>
+              <Link to="login">Login </Link>
             </li>
             <li>
               <Link to="dashboard">Dashboard</Link>
