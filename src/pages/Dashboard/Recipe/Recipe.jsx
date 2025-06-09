@@ -4,6 +4,7 @@ import Dhosa from "../../../assets/images/three.png";
 import Dumplings from "../../../assets/images/two.png";
 import Kathi from "../../../assets/images/one.png";
 import RecipeDetails from "./RecipeDetails";
+import './Recipe.css'; // Import custom minimal food app theme
 
 const Recipe = () => {
   const datas = [
@@ -91,17 +92,17 @@ const Recipe = () => {
         <div className="space-y-4 max-w-xl mx-auto">
           <h3 className="text-xl font-semibold">Results:</h3>
           {recipes.map((r, idx) => (
-            <div key={idx} className="card bg-base-100 shadow p-4">
-              <div className="font-bold">{r.recipe}</div>
-              <div className="text-sm mb-2">Ingredients: {r.ingredients}</div>
-              <a href={r.url} target="_blank" rel="noopener noreferrer" className="link link-primary">
+            <div key={idx} className="card p-4 border border-orange-100 rounded-lg shadow-sm bg-white">
+              <div className="font-bold text-orange-700">{r.recipe}</div>
+              <div className="text-sm mb-2 text-gray-600">Ingredients: {r.ingredients}</div>
+              <a href={r.url} target="_blank" rel="noopener noreferrer" className="text-orange-600 font-medium hover:underline">
                 View Recipe
               </a>
             </div>
           ))}
         </div>
       )}
-      <div className="mx-2 grid lg:grid-cols-4 md:grid-cols-2">
+      <div className="mx-2 grid gap-6 lg:grid-cols-4 md:grid-cols-2">
         {datas.map((data) => (
           <RecipeDetails key={data._id} data={data}></RecipeDetails>
         ))}
