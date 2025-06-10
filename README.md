@@ -162,8 +162,9 @@ This project is licensed under the [MIT License](LICENSE).
 > Minimal. Professional. Scalable.  
 > Happy coding! 🚀
 
-
 ---
+
+## 👉 License
 
 MIT License
 
