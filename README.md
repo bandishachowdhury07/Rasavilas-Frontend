@@ -14,22 +14,58 @@ A minimal, professional, and performant frontend for the Rasavilas project. This
 
 ```
 Rasavilas-Frontend/
-│
-├── public/               # Static assets (index.html, images, etc.)
+├── public/
+│   └── res.webp
 ├── src/
-│   ├── assets/           # Images, icons, fonts
-│   ├── components/       # Reusable UI components
-│   ├── pages/            # Page-level components (routes/views)
-│   ├── services/         # API calls and business logic
-│   ├── utils/            # Utility/helper functions
-│   ├── hooks/            # Custom React hooks
-│   ├── context/          # React context for state management
-│   ├── App.js            # Root component
-│   └── index.js          # Application entry point
-├── .env                  # Environment variables
-├── .gitignore            # Git ignore rules
-├── package.json          # Project metadata and dependencies
-└── README.md             # Project documentation
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── App.css
+│   ├── index.css
+│   ├── assets/
+│   │   └── images/
+│   │       ├── bandisha.jpeg
+│   │       ├── bannar.png
+│   │       ├── four.png
+│   │       ├── image1.png
+│   │       ├── one.png
+│   │       ├── sidebannar.jpeg
+│   │       ├── three.png
+│   │       └── two.png
+│   ├── pages/
+│   │   ├── About/
+│   │   │   ├── About.jsx
+│   │   │   └── AboutDetails.jsx
+│   │   ├── Contact/
+│   │   │   └── Contact.jsx
+│   │   ├── Dashboard/
+│   │   │   ├── Cart.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Gethelp.jsx
+│   │   │   ├── History.jsx
+│   │   │   ├── Setting.jsx
+│   │   │   └── Recipe/
+│   │   │       ├── Recipe.jsx
+│   │   │       ├── Recipe.css
+│   │   │       └── RecipeDetails.jsx
+│   │   ├── Home/
+│   │   │   ├── Banner.jsx
+│   │   │   └── Home.jsx
+│   │   └── Login/
+│   │       └── Login.jsx
+│   └── Shared/
+│       ├── Footer/
+│       │   └── Footer.jsx
+│       └── NavBar/
+│           └── Navbar.jsx
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+├── index.html
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
 ```
 
 ---
