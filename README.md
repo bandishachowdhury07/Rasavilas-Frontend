@@ -10,66 +10,6 @@ A minimal, professional, and performant frontend for the Rasavilas project. This
 
 ---
 
-## 🏗️ Code Structure
-
-```
-Rasavilas-Frontend/
-├── public/
-│   └── res.webp
-├── src/
-│   ├── App.jsx
-│   ├── main.jsx
-│   ├── App.css
-│   ├── index.css
-│   ├── assets/
-│   │   └── images/
-│   │       ├── bandisha.jpeg
-│   │       ├── bannar.png
-│   │       ├── four.png
-│   │       ├── image1.png
-│   │       ├── one.png
-│   │       ├── sidebannar.jpeg
-│   │       ├── three.png
-│   │       └── two.png
-│   ├── pages/
-│   │   ├── About/
-│   │   │   ├── About.jsx
-│   │   │   └── AboutDetails.jsx
-│   │   ├── Contact/
-│   │   │   └── Contact.jsx
-│   │   ├── Dashboard/
-│   │   │   ├── Cart.jsx
-│   │   │   ├── Dashboard.jsx
-│   │   │   ├── Gethelp.jsx
-│   │   │   ├── History.jsx
-│   │   │   ├── Setting.jsx
-│   │   │   └── Recipe/
-│   │   │       ├── Recipe.jsx
-│   │   │       ├── Recipe.css
-│   │   │       └── RecipeDetails.jsx
-│   │   ├── Home/
-│   │   │   ├── Banner.jsx
-│   │   │   └── Home.jsx
-│   │   └── Login/
-│   │       └── Login.jsx
-│   └── Shared/
-│       ├── Footer/
-│       │   └── Footer.jsx
-│       └── NavBar/
-│           └── Navbar.jsx
-├── .github/
-│   └── workflows/
-│       └── deploy.yml
-├── index.html
-├── package.json
-├── postcss.config.js
-├── tailwind.config.js
-├── vite.config.js
-└── README.md
-```
-
----
-
 ## 🔄 Core Logic
 
 - **Component-Based Architecture**: UI is broken down into small, reusable components.
@@ -136,19 +76,63 @@ yarn build
 
 ---
 
-## 🤝 Contributing
+## 🏗️ Code Structure
 
-1. Fork the repository.
-2. Create your feature branch: `git checkout -b feature/feature-name`.
-3. Commit your changes: `git commit -am 'Add new feature'`.
-4. Push to the branch: `git push origin feature/feature-name`.
-5. Open a pull request.
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
+```
+Rasavilas-Frontend/
+├── public/
+│   └── res.webp
+├── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── App.css
+│   ├── index.css
+│   ├── assets/
+│   │   └── images/
+│   │       ├── bandisha.jpeg
+│   │       ├── bannar.png
+│   │       ├── four.png
+│   │       ├── image1.png
+│   │       ├── one.png
+│   │       ├── sidebannar.jpeg
+│   │       ├── three.png
+│   │       └── two.png
+│   ├── pages/
+│   │   ├── About/
+│   │   │   ├── About.jsx
+│   │   │   └── AboutDetails.jsx
+│   │   ├── Contact/
+│   │   │   └── Contact.jsx
+│   │   ├── Dashboard/
+│   │   │   ├── Cart.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Gethelp.jsx
+│   │   │   ├── History.jsx
+│   │   │   ├── Setting.jsx
+│   │   │   └── Recipe/
+│   │   │       ├── Recipe.jsx
+│   │   │       ├── Recipe.css
+│   │   │       └── RecipeDetails.jsx
+│   │   ├── Home/
+│   │   │   ├── Banner.jsx
+│   │   │   └── Home.jsx
+│   │   └── Login/
+│   │       └── Login.jsx
+│   └── Shared/
+│       ├── Footer/
+│       │   └── Footer.jsx
+│       └── NavBar/
+│           └── Navbar.jsx
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+├── index.html
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
+```
 
 ---
 
