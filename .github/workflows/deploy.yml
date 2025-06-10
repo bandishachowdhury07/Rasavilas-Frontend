@@ -37,6 +37,18 @@ jobs:
       - name: List dist directory contents
         run: ls -R ./dist
 
+      - name: Fail if dist directory does not exist
+        run: |
+          if [ ! -d "./dist" ]; then
+            echo "Build output directory ./dist does not exist!";
+            exit 1;
+          fi
+
+      - name: Configure git user
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
