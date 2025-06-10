@@ -47,11 +47,8 @@ const Recipe = () => {
     setLoading(true);
     setError("");
     setRecipes([]);
-    // Use full backend URL in production, proxy in development
-    const API_URL =
-      import.meta.env.MODE === "development"
-        ? "/predict"
-        : "https://rasavilas-services.onrender.com/predict";
+    // Always use full backend URL to avoid 405 errors on GitHub Pages
+    const API_URL = "https://rasavilas-services.onrender.com/predict";
     try {
       const response = await fetch(API_URL, {
         method: "POST",
