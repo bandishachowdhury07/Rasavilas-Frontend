@@ -1,31 +1,32 @@
 import React from "react";
 import banner from "../../assets/images/homepage_dish_image.png";
+import bannerOne from "../../assets/images/sidebannar.jpeg";
 
 const Banner = () => {
   return (
-    <div className="hero min-h-screen bg-secondary">
-      <div className="hero-content flex-col lg:flex-row-reverse items-center justify-center">
-        <div className="mx-10 flex-shrink-0">
+    <div className="hero min-h-screen relative ">
+      <div className="hero-content flex-col lg:flex-row-reverse">
+        <div className="-z-2 mx-10 flex-shrink-0 flex items-center justify-center">
           <img
             src={banner}
-            className="max-w-md rounded-lg"
-            alt="Delicious Dish"
+            className="max-w-md w-full h-auto rounded-lg animate-spin-slow"
+            alt="Banner"
           />
         </div>
-        <div className="flex flex-col items-start lg:items-start text-left">
-          <h1 className="text-2xl text-orange-700 mb-2 font-semibold">
-            Transform Your Ingredients Into
+        <div>
+          <h1 className="text-6xl font-bold text-orange-800 mb-2">
+            Rasavilas
           </h1>
-          <h2 className="text-5xl font-bold text-orange-800 mb-4">
-            Something Delicious
-          </h2>
-          <p className="mb-6 text-base text-gray-700">
-            Make the Most of What You Have
+          <p className="text-lg text-orange-700 mb-8">
+            Transform your ingredients into something delicious.
           </p>
-          <button className="btn bg-blue-600 w-1/2 rounded-full text-xl text-white border-2 border-blue-600 hover:bg-blue-700 font-semibold transition-colors duration-200">
-  Generate Recipe
-</button>
+          <button className="w-48 py-3 rounded-full text-lg font-semibold bg-orange-600 text-white hover:bg-orange-700 border-0 shadow-none transition-colors duration-200">
+            Generate Recipe
+          </button>
         </div>
+      </div>
+      <div className="absolute right-0 -top-20 w-1/3 z-2">
+        {/* <img src={bannerOne} alt="demo" /> */}
       </div>
     </div>
   );

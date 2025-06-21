@@ -62,9 +62,9 @@ const About = () => {
           <span className="text-base text-gray-600 mb-2">
             Bachelors in Technology &middot; Computer Science & Engineering Undergraduate
           </span>
-          <span className="text-sm text-gray-400 mb-4">
+          {/* <span className="text-sm text-gray-400 mb-4">
             Roll: 123200903039
-          </span>
+          </span> */}
           <div className="flex flex-wrap gap-4 mt-2 justify-center md:justify-start">
             {socialLinks.map((link) => (
               <a
