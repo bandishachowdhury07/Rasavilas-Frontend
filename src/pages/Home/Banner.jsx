@@ -7,7 +7,11 @@ const Banner = () => {
     <div className="hero min-h-screen relative ">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="-z-2 mx-10">
-          <img src={banner} className="max-w-md rounded-lg shadow-2xl " />
+          <img
+            src={banner}
+            className="max-w-md rounded-lg shadow-2xl "
+            alt="Banner"
+          />
         </div>
         <div>
           <h1 className="text-2xl ">Transform Your Ingredients Into</h1>

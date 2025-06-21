@@ -5,14 +5,11 @@ const Navbar = () => {
   const menuItem = (
     <>
       <li>
-        <Link to="/">Home</Link>
-      </li>
+      <Link to="/home">Home</Link>
+    </li>
 
       <li>
         <Link to="/about">About Us</Link>
-      </li>
-      <li>
-        <Link to="/contact">Contact Us</Link>
       </li>
       <li>
         <Link to="/recipe">Recipe</Link>
@@ -49,7 +46,7 @@ const Navbar = () => {
         {/* <a className="btn btn-ghost text-xl">Rasavilas</a> */}
         <ul>
           <li className="btn btn-ghost text-xl">
-            <Link to="/">Rasavilas</Link>
+            <Link to="/home">Rasavilas</Link>
           </li>
         </ul>
       </div>
@@ -89,10 +86,7 @@ const Navbar = () => {
         <div className="">
           <ul className="flex gap-4">
             <li>
-              <Link to="login">Login </Link>
-            </li>
-            <li>
-              <Link to="dashboard">Dashboard</Link>
+              <Link to="/dashboard">Dashboard</Link>
             </li>
           </ul>
         </div>
