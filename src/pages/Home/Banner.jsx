@@ -13,6 +13,7 @@ const Banner = () => {
             src={banner}
             className="max-w-md w-full h-auto rounded-lg animate-spin-slow"
             alt="Banner"
+            onContextMenu={e => e.preventDefault()}
           />
         </div>
         <div>
