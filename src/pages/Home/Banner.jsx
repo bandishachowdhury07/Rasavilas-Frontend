@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import banner from "../../assets/images/homepage_dish_image.png";
 import bannerOne from "../../assets/images/sidebannar.jpeg";
 
 const Banner = () => {
+  const navigate = useNavigate();
   return (
     <div className="hero min-h-screen relative ">
       <div className="hero-content flex-col lg:flex-row-reverse">
@@ -20,7 +22,10 @@ const Banner = () => {
           <p className="text-lg text-orange-700 mb-8">
             Transform your ingredients into something delicious.
           </p>
-          <button className="w-48 py-3 rounded-full text-lg font-semibold bg-orange-600 text-white hover:bg-orange-700 border-0 shadow-none transition-colors duration-200">
+          <button
+            className="w-48 py-3 rounded-full text-lg font-semibold bg-orange-600 text-white hover:bg-orange-700 border-0 shadow-none transition-colors duration-200"
+            onClick={() => navigate('/recipe')}
+          >
             Generate Recipe
           </button>
         </div>
